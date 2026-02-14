@@ -10,3 +10,4 @@ class Product(SlugBaseModel, CreatedBaseModel):
     discount = PositiveSmallIntegerField(db_default=0)
     specification = JSONField(default=dict, blank=True)
     description = TextField(blank=True)
+    spec = JSONField(default=dict)
