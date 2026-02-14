@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from drf_spectacular.utils import extend_schema
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
-# Create your views here.
+
+@extend_schema(tags=['auth'])
+class CustomTokenObtainPairView(TokenObtainPairView):
+    pass
+    # serializer_class = CustomTokenObtainPairSerializer
+
+
+@extend_schema(tags=['auth'])
+class CustomTokenRefreshView(TokenRefreshView):
+    pass
