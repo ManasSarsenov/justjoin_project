@@ -3,3 +3,4 @@ uv add dotenv
 uv add pillow
 uv add drf-spectacular
 uv add django-jazzmin
+uv add djangorestframework-simplejwt
